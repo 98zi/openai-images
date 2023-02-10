@@ -28,7 +28,8 @@ var prompt = ref();
 <template>
 	<div class="app-main">
 		<h2>Open AI 图像生成</h2>
-		<textarea v-model="prompt" :disabled="disabled" autofocus @keyup.enter="search()" class="app-input" id="text" placeholder="(请勿留空)输入你的描述: 星空下的梵高"></textarea>
+		<textarea v-model="prompt" :disabled="disabled" autofocus @keyup.enter="search()" class="app-input" id="text"
+			placeholder="(请勿留空)输入你的描述如: 星空下的梵高"></textarea>
 		<button @click="search()">生成图像</button>
 		<LoadingIndicator v-if="disabled" />
 		<!-- 循环 -->

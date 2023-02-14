@@ -16,8 +16,21 @@
   flex-direction: column;
   align-items: center;
 }
-
 .app-input {
+  margin-top: 20px;
+  padding: 6px 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: "OPPOSans";
+  outline: none;
+  resize: none;
+  border: 1px solid #1a1a1a;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.app-textarea {
   margin: 20px;
   padding: 6px 10px;
   box-sizing: border-box;
@@ -138,7 +151,6 @@ button:focus-visible {
   }
 }
 
-
 .imgs-container {
   display: flex;
   flex-wrap: wrap;
@@ -152,7 +164,6 @@ button:focus-visible {
   margin: 10px;
 }
 
-
 @media (max-width: 500px) {
   .github-corner:hover .octo-arm {
     animation: none;
@@ -161,8 +172,12 @@ button:focus-visible {
     animation: octocat-wave 560ms ease-in-out;
   }
 
-  .imgs-container img  {
+  .imgs-container img {
     width: 90%;
     margin: 0 0 20px;
   }
+}
+
+.notice {
+  color: #666;
 }

@@ -16,7 +16,7 @@ export const useImageStore = defineStore('ImageStore', {
 			const openai = new OpenAIApi(configuration);
 			this.image = await openai.createImage({
 				prompt: value,
-				n: 2,
+				n: 1,
 				size: "1024x1024",
 			});
 			this.data = this.image.data.data;

@@ -2,6 +2,10 @@
 
 基于 openai api 生成图像，可以输入详细的描述语句，支持中英文。
 
+在netlify部署时需要添加环境变量
+
+`VITE_apiKey` ，值为 openai apikey.
+
 ### 1. 如何获取 openai Api 密钥？
 
 注册 https://openai.com 账号。
